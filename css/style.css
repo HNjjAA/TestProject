@@ -451,6 +451,22 @@ aside .brand span {
   font-size: 2rem;
   text-align: center;
 }
+aside .menuContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+aside .menuContainer ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 100%;
+}
 
 body {
   display: flex;
