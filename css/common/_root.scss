@@ -1,0 +1,23 @@
+//이곳은 root입니다
+
+:root {
+    //color
+    --white:#fff;
+    --black:#202224;
+    --primary:#4880FF;
+    --secondary:#FF8743;
+    --gray01:#F5F6FA;
+
+
+
+
+    --bodyBG:var(--gray01);
+
+    //aside
+    --aside-width:24rem;
+
+    //header
+    --header-width:calc(100% - var(var(--aside-width)));
+    --header-height:7rem;
+
+}

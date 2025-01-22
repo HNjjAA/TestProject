@@ -1,0 +1,43 @@
+@charset "UTF-8";
+/*last update - 2025.01.22 */
+
+/***이파일은 sass전처리기를 사용하였으며 style.scss에서 작성되었습니다***/
+/***style.css파일의 직접적 수정을 하지말아주세요 버전관리가 되지 않습니다***/
+/*
+===============================================================================================
+git Test - scss문서
+
+> 유의사항
+─ 디자이너 외 직군 수정금지 or 수정시 웹솔루션으로 문의
+
+> 구조
+
+
+> font 정리(이름,저작자,라이선스)
+
+- Nunito Sans(www.sansoxygen.com,Available for Commercial Use)
+
+
+
+> z-index 정리
+- 0 : 
+
+===============================================================================================
+*/
+
+
+@use "includeDefault" as *;//기본설정scss모음(root,variables,reset등)
+@use "includePages" as *;//공용class, 각 페이지들 모음
+
+
+
+
+body{
+	@include flex-layout($d: flex, $ai: flex-start, $jc: flex-start, $fd: row,$fw: nowrap);	
+	@include position($p: relative);
+	width: 100%;
+	height: 100%;
+    font-family: 'Nunito Sans',sans-serif;
+    background-color: var(--bodyBG);
+	overflow:hidden;    
+}

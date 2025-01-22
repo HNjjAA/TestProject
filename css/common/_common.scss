@@ -1,0 +1,74 @@
+//이곳은 common입니다 공용 class를 모아둡니다
+@use "../includeDefault" as *;
+
+//display 정의
+.display_none {
+    display: none !important;
+}
+
+.display_block {
+    display: block !important;
+}
+
+.display_flex {
+    display: flex !important;
+}
+
+//flex정의
+.flex_column {
+    display: flex;
+    flex-direction: column; 
+}
+.flex_row {
+    display: flex;
+    flex-direction: row;
+}
+.flex_between {
+    display: flex;    
+    justify-content: space-between;
+}
+
+.scrollWrap {
+    flex-grow: 1;
+    width: 100%;
+    height: auto;
+    padding: 0 5px 5px 0;
+    overflow: auto;
+}
+
+.txt-ag-l {
+    text-align: left !important;
+}
+.txt-ag-c {
+    text-align: center !important;
+}
+.txt-ag-r {
+    text-align: right !important;
+}
+
+.padding0 {
+    padding: 0 !important;
+}
+
+// 드래그 방지 클래스
+.draggdisable {
+    @include user-select(none);
+}
+
+// 드래그 허용 클래스
+.draggable {
+    @include user-select(all);
+}
+
+.cursor-default {
+    cursor: default !important;
+}
+
+
+//font color
+.colorPrimary{
+    color:var(--primary);
+}
+.colorBlack{
+    color:var(--black);
+}

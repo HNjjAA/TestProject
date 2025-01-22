@@ -1,0 +1,18 @@
+//이곳은 aside 입니다
+
+@use "../includeDefault" as *;
+
+aside{
+    @include flex-layout($d: flex, $ai: flex-start, $jc: flex-start, $fd: column,$fw: nowrap);	
+    width:var(--aside-width);
+    height: 100%;
+    background-color: var(--white);
+    .brand{
+        @include flex-layout($d: flex, $ai: center, $jc: center, $fd: row,$fw: nowrap);	
+        width: 100%;
+        height: var(--header-height);
+        span{
+            @include font( $fw: 800, $lh: 1.5, $fz: 2rem, $ta: center);
+        }
+    }
+}

@@ -1,0 +1,467 @@
+@charset "UTF-8";
+/*last update - 2025.01.22 */
+/***이파일은 sass전처리기를 사용하였으며 style.scss에서 작성되었습니다***/
+/***style.css파일의 직접적 수정을 하지말아주세요 버전관리가 되지 않습니다***/
+/*
+===============================================================================================
+git Test - scss문서
+
+> 유의사항
+─ 디자이너 외 직군 수정금지 or 수정시 웹솔루션으로 문의
+
+> 구조
+
+
+> font 정리(이름,저작자,라이선스)
+
+- Nunito Sans(www.sansoxygen.com,Available for Commercial Use)
+
+
+
+> z-index 정리
+- 0 : 
+
+===============================================================================================
+*/
+/*Nunito Sans 폰트*/
+@import url("https://fonts.cdnfonts.com/css/nunito-sans");
+/***********************************************Reset****************************************************/
+html, body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  word-break: keep-all;
+  word-wrap: break-word;
+  -webkit-tap-highlight-color: transparent;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100dvh;
+  overflow-x: hidden;
+}
+
+body,
+div,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+table,
+th,
+td,
+form,
+fieldset,
+legend,
+input,
+textarea,
+a,
+button,
+select,
+ul,
+li,
+span,
+em,
+label,
+:before,
+:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-text-size-adjust: none;
+  font-family: inherit;
+  line-height: 1.5;
+  letter-spacing: inherit;
+}
+
+pre {
+  font-family: inherit;
+}
+
+input,
+textarea,
+a,
+button,
+select,
+span,
+label,
+:before,
+:after {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section {
+  display: block;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img,
+fieldset {
+  border: 0;
+}
+
+fieldset {
+  min-width: 100%;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+em,
+address,
+i {
+  font-style: normal;
+}
+
+a,
+a:hover,
+a:active,
+a:focus {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input[type=submit],
+input[type=button] {
+  overflow: visible;
+  margin: 0;
+  background-color: transparent;
+  border: none;
+  -webkit-appearance: button;
+  cursor: pointer;
+  font: inherit;
+  color: inherit;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+textarea {
+  resize: none;
+}
+
+label {
+  cursor: pointer;
+}
+
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+input[type=text],
+input[type=tel],
+input[type=password],
+input[type=file],
+input[type=number],
+input[type=email],
+input[type=date],
+input[type=search],
+textarea {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+caption {
+  display: none;
+}
+
+[role=button] {
+  cursor: pointer;
+}
+
+iframe {
+  margin: 0;
+  padding: 0;
+  border: 0px;
+  outline: 0px;
+}
+iframe:focus {
+  outline: 0px;
+}
+
+* {
+  /* Buttons */
+  /* Up */
+  /* Down */
+  /* Left */
+  /* Right */
+}
+* ::-webkit-scrollbar {
+  height: 1rem;
+  width: 1rem;
+}
+* ::-webkit-scrollbar-track {
+  border-radius: 0;
+  background-color: #f1f1f1;
+}
+* ::-webkit-scrollbar-track:hover {
+  background-color: #dedede;
+}
+* ::-webkit-scrollbar-thumb {
+  border-radius: 0.46rem;
+  background-color: #c1c1c1;
+  border: 2px solid #f1f1f1;
+}
+* ::-webkit-scrollbar-thumb:hover {
+  background-color: #a1a0a0;
+}
+* ::-webkit-scrollbar-button:single-button {
+  background-color: #f1f1f1;
+  display: block;
+  height: 1rem;
+  width: 1rem;
+  background-size: 7px 7px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+* ::-webkit-scrollbar-button:single-button:vertical:decrement {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='7' height='7' viewBox='0 0 7 7' fill='none'%3E%3Cpath d='M7 5H0V4H1V3H2V2H3V1H4V2H5V3H6V4H7V5Z' fill='%23505050'/%3E%3C/svg%3E");
+}
+* ::-webkit-scrollbar-button:single-button:vertical:decrement:hover {
+  background-color: #dedede;
+}
+* ::-webkit-scrollbar-button:single-button:vertical:increment {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='7' height='7' viewBox='0 0 7 7' fill='none'%3E%3Cpath d='M8.74228e-08 2L7 2V3L6 3V4H5V5L4 5V6H3V5H2V4L1 4L1 3L0 3L8.74228e-08 2Z' fill='%23505050'/%3E%3C/svg%3E");
+}
+* ::-webkit-scrollbar-button:vertical:single-button:increment:hover {
+  background-color: #dedede;
+}
+* ::-webkit-scrollbar-button:single-button:horizontal:decrement {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='3' height='7' viewBox='0 0 3 7' fill='none'%3E%3Cpath d='M3 0.5L-1.31134e-07 3.5L3 6.5L3 0.5Z' fill='%23505050'/%3E%3C/svg%3E");
+}
+* ::-webkit-scrollbar-button:single-button:horizontal:decrement:hover {
+  background-color: #dedede;
+}
+* ::-webkit-scrollbar-button:single-button:horizontal:increment {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='7' viewBox='0 0 4 7' fill='none'%3E%3Cpath d='M0.5 6.5L3.5 3.5L0.5 0.5L0.5 6.5Z' fill='%23505050'/%3E%3C/svg%3E");
+}
+* ::-webkit-scrollbar-button:horizontal:single-button:increment:hover {
+  background-color: #dedede;
+}
+
+/***********************************************Reset끝****************************************************/
+:root {
+  --white:#fff;
+  --black:#202224;
+  --primary:#4880FF;
+  --secondary:#FF8743;
+  --gray01:#F5F6FA;
+  --bodyBG:var(--gray01);
+  --aside-width:24rem;
+  --header-width:calc(100% - var(var(--aside-width)));
+  --header-height:7rem;
+}
+
+/*last update - 2025.01.22 */
+/***이파일은 sass전처리기를 사용하였으며 style.scss에서 작성되었습니다***/
+/***style.css파일의 직접적 수정을 하지말아주세요 버전관리가 되지 않습니다***/
+/*
+===============================================================================================
+git Test - scss문서
+
+> 유의사항
+─ 디자이너 외 직군 수정금지 or 수정시 웹솔루션으로 문의
+
+> 구조
+
+
+> font 정리(이름,저작자,라이선스)
+
+- Nunito Sans(www.sansoxygen.com,Available for Commercial Use)
+
+
+
+> z-index 정리
+- 0 : 
+
+===============================================================================================
+*/
+.display_none {
+  display: none !important;
+}
+
+.display_block {
+  display: block !important;
+}
+
+.display_flex {
+  display: flex !important;
+}
+
+.flex_column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex_row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex_between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.scrollWrap {
+  flex-grow: 1;
+  width: 100%;
+  height: auto;
+  padding: 0 5px 5px 0;
+  overflow: auto;
+}
+
+.txt-ag-l {
+  text-align: left !important;
+}
+
+.txt-ag-c {
+  text-align: center !important;
+}
+
+.txt-ag-r {
+  text-align: right !important;
+}
+
+.padding0 {
+  padding: 0 !important;
+}
+
+.draggdisable {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.draggable {
+  -webkit-user-select: all;
+  -moz-user-select: all;
+  -ms-user-select: all;
+  user-select: all;
+}
+
+.cursor-default {
+  cursor: default !important;
+}
+
+.colorPrimary {
+  color: var(--primary);
+}
+
+.colorBlack {
+  color: var(--black);
+}
+
+/*last update - 2025.01.22 */
+/***이파일은 sass전처리기를 사용하였으며 style.scss에서 작성되었습니다***/
+/***style.css파일의 직접적 수정을 하지말아주세요 버전관리가 되지 않습니다***/
+/*
+===============================================================================================
+git Test - scss문서
+
+> 유의사항
+─ 디자이너 외 직군 수정금지 or 수정시 웹솔루션으로 문의
+
+> 구조
+
+
+> font 정리(이름,저작자,라이선스)
+
+- Nunito Sans(www.sansoxygen.com,Available for Commercial Use)
+
+
+
+> z-index 정리
+- 0 : 
+
+===============================================================================================
+*/
+aside {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: var(--aside-width);
+  height: 100%;
+  background-color: var(--white);
+}
+aside .brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: var(--header-height);
+}
+aside .brand span {
+  font-weight: 800;
+  line-height: 1.5;
+  font-size: 2rem;
+  text-align: center;
+}
+
+body {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  font-family: "Nunito Sans", sans-serif;
+  background-color: var(--bodyBG);
+  overflow: hidden;
+}/*# sourceMappingURL=style.css.map */
