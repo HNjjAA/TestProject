@@ -501,6 +501,7 @@ aside .menuContainer .menuDefault li {
   font-size: 1.4rem;
   text-align: center;
   color: var(--black);
+  border: 10px solid red;
 }
 
 body {
