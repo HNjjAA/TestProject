@@ -15,4 +15,12 @@ aside{
             @include font( $fw: 800, $lh: 1.5, $fz: 2rem, $ta: center);
         }
     }
+    .menuContainer{
+        @include flex-layout($d: flex, $ai: flex-start, $jc: flex-start, $fd: column,$fw: nowrap);	
+        .menuDefault{
+            li{
+
+            }
+        }
+    }
 }

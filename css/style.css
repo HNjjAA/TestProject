@@ -483,7 +483,13 @@ aside .brand span {
   font-size: 2rem;
   text-align: center;
 }
-
+aside .menuContainer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
 body {
   display: flex;
   align-items: flex-start;
@@ -506,4 +512,20 @@ body .mainContainer {
   position: relative;
   width: calc(100% - var(--aside-width));
   height: 100%;
+}
+body .mainContainer main {
+  padding: 30px;
+}
+body .mainContainer main .cardWrap {
+  position: relative;
+  display: flex;
+  gap: 30px;
+  width: 100%;
+}
+body .mainContainer main .cardWrap .card {
+  width: 262px;
+  height: 161px;
+  background: #FFF;
+  border-radius: 14px;
+  box-shadow: 6px 6px 54px 0px rgba(0, 0, 0, 0.05);
 }/*# sourceMappingURL=style.css.map */
