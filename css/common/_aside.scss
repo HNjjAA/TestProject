@@ -24,8 +24,7 @@ aside{
                 width: 100%;                
                 @include font( $fw: 600, $lh: 1.5, $fz: 1.4rem, $ta: center);
                 color:var(--black);
-                background-color:var(--primary);
-                border:1px solid green;
+                border:10px solid red;
             }
         }
     }

@@ -501,8 +501,12 @@ aside .menuContainer .menuDefault li {
   font-size: 1.4rem;
   text-align: center;
   color: var(--black);
+<<<<<<< .merge_file_hQgegy
   background-color: var(--primary);
   border: 1px solid green;
+=======
+  border: 10px solid red;
+>>>>>>> .merge_file_xz6ky7
 }
 
 body {
