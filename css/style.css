@@ -489,7 +489,20 @@ aside .menuContainer {
   justify-content: flex-start;
   flex-direction: column;
   flex-wrap: nowrap;
+  width: 100%;
 }
+aside .menuContainer .menuDefault {
+  width: 100%;
+}
+aside .menuContainer .menuDefault li {
+  width: 100%;
+  font-weight: 600;
+  line-height: 1.5;
+  font-size: 1.4rem;
+  text-align: center;
+  color: var(--black);
+}
+
 body {
   display: flex;
   align-items: flex-start;

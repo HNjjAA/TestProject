@@ -17,9 +17,13 @@ aside{
     }
     .menuContainer{
         @include flex-layout($d: flex, $ai: flex-start, $jc: flex-start, $fd: column,$fw: nowrap);	
+        width: 100%;
         .menuDefault{
+            width: 100%;
             li{
-
+                width: 100%;                
+                @include font( $fw: 600, $lh: 1.5, $fz: 1.4rem, $ta: center);
+                color:var(--black);
             }
         }
     }
