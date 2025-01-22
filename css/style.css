@@ -426,6 +426,38 @@ git Test - scss문서
 
 ===============================================================================================
 */
+.mainContainer header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+/*last update - 2025.01.22 */
+/***이파일은 sass전처리기를 사용하였으며 style.scss에서 작성되었습니다***/
+/***style.css파일의 직접적 수정을 하지말아주세요 버전관리가 되지 않습니다***/
+/*
+===============================================================================================
+git Test - scss문서
+
+> 유의사항
+─ 디자이너 외 직군 수정금지 or 수정시 웹솔루션으로 문의
+
+> 구조
+
+
+> font 정리(이름,저작자,라이선스)
+
+- Nunito Sans(www.sansoxygen.com,Available for Commercial Use)
+
+
+
+> z-index 정리
+- 0 : 
+
+===============================================================================================
+*/
 aside {
   display: flex;
   align-items: flex-start;
@@ -464,4 +496,14 @@ body {
   font-family: "Nunito Sans", sans-serif;
   background-color: var(--bodyBG);
   overflow: hidden;
+}
+body .mainContainer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  position: relative;
+  width: calc(100% - var(--aside-width));
+  height: 100%;
 }/*# sourceMappingURL=style.css.map */

@@ -1,1 +1,9 @@
 //이곳은 header 입니다
+
+@use "../includeDefault" as *;
+
+.mainContainer{
+    header{
+        @include flex-layout($d: flex, $ai: center, $jc: flex-start, $fd: row,$fw: nowrap);	
+    }
+}
