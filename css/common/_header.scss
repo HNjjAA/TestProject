@@ -5,6 +5,7 @@
 .mainContainer{
     header{
         @include flex-layout($d: flex, $ai: center, $jc: flex-start, $fd: row,$fw: nowrap);	
-        border: 1px solid red;
+        border:1px solid red;
+        border:10px solid green;
     }
 }

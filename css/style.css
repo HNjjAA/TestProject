@@ -433,6 +433,7 @@ git Test - scss문서
   flex-direction: row;
   flex-wrap: nowrap;
   border: 1px solid red;
+  border: 10px solid green;
 }
 
 /*last update - 2025.01.22 */
