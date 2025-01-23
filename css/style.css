@@ -432,6 +432,7 @@ git Test - scss문서
   justify-content: flex-start;
   flex-direction: row;
   flex-wrap: nowrap;
+  border: 10px solid green;
 }
 
 /*last update - 2025.01.22 */
